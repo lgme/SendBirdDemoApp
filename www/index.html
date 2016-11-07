@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="js/jquery-1.5.0.mobile.min.css">
+
+        <title>SendBird Chat App</title>
+    </head>
+    <body>		<!-- page 1 -->
+		<div data-role="page" id="page1">
+			<div data-role="header">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#page1" class="ui-btn-active ui-state-persist">Page 1</a></li>
+						<li><a href="#page2">Page 2</a></li>
+						<li><a href="#page3">Page 3</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div>
+			
+			<div class="ui-content">
+				<p>This is page 1</p>
+        	</div><!-- end page 1 content -->
+			
+			<div data-role="footer" data-position="fixed">
+				<h1>Page1</h1>
+			</div><!-- /footer -->
+		</div>
+		<!-- /page1 -->
+
+				<!-- page 2 -->
+		<div data-role="page" id="page2">
+			<div data-role="header">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#page1">Page 1</a></li>
+						<li><a href="#page2" class="ui-btn-active ui-state-persist">Page 2</a></li>
+						<li><a href="#page3">Page 3</a></li>
+					</ul>
+				</div><!-- /navbar -->	
+			</div>
+			
+			<div class="ui-content">
+				<p>This is page 2</p>
+			</div><!-- end page 2 content -->
+			
+			<div data-role="footer" data-position="fixed">
+				<h1>Page2</h1>
+			</div><!-- /footer -->
+		</div><!-- /page2 -->
+		
+				<!-- page 3 -->
+		<div data-role="page" id="page3">
+			<div data-role="header">				<div data-role="navbar">
+					<ul>
+						<li><a href="#page1">Page 1</a></li>
+						<li><a href="#page2">Page 2</a></li>
+						<li><a href="#page3" class="ui-btn-active ui-state-persist">Page 3</a></li>
+					</ul>
+				</div><!-- /navbar -->
+			</div>
+			
+			<div class="ui-content">
+				<p>This is page 3</p>
+			</div><!-- end page 3 content -->
+			
+			<div data-role="footer" data-position="fixed">
+				<h1>Page3</h1>
+			</div><!-- /footer -->
+		</div><!-- /page3 -->
+		
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" id="cordova-jquery"></script>
+		<script type="text/javascript" id="jqm-trans-disable">
+		/* For having a faster transition */
+		$(document).on("mobileinit", function() {
+				$.mobile.defaultPageTransition = "none";
+				$.mobile.defaultDialogTransition = "none";
+		});
+		</script>
+		<script type="text/javascript" src="js/jquery-1.5.0.mobile.min.js"></script>
+		<script type="text/javascript" src="libs/sendbird/SendBird.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>
